@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.inputs input {
+    width: 80px;
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 16px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.red {
+    background: #e04e4e;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.timer-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.time-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.progress-ring circle {
+    fill: none;
+    stroke-width: 10;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.ring-bg {
+    stroke: #ddd;
+}
+
+.ring {
+    stroke: #4a90e2;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s linear;
+}

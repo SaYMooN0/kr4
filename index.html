@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Таймер</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Таймер</h1>
+
+        <div class="inputs">
+            <input type="number" id="hours" min="0" placeholder="Часы">
+            <input type="number" id="minutes" min="0" max="59" placeholder="Минуты">
+            <input type="number" id="seconds" min="0" max="59" placeholder="Секунды">
+        </div>
+
+        <div class="buttons">
+            <button id="startBtn">Старт</button>
+
+            <button id="stopBtn" class="hidden">Стоп</button>
+            <button id="resumeBtn" class="hidden">Продолжить</button>
+
+            <button id="resetBtn" class="hidden red">Сбросить</button>
+        </div>
+
+        <div class="timer-wrapper">
+            <svg class="progress-ring" width="180" height="180">
+                <circle class="ring-bg" cx="90" cy="90" r="80" />
+                <circle class="ring" cx="90" cy="90" r="80" />
+            </svg>
+            <div id="display" class="time-text">00:00:00</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
